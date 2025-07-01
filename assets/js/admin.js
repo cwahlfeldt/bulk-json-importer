@@ -145,14 +145,14 @@
 			// Check file size (10MB limit)
 			const maxSize = 10 * 1024 * 1024; // 10MB in bytes
 			if ( file.size > maxSize ) {
-				alert( 'File size is too large. Please upload a file smaller than 10MB.' );
+				alert( bjiAdmin.strings.fileSizeError );
 				e.preventDefault();
 				return false;
 			}
 
 			// Check file type
 			if ( file.type !== 'application/json' && ! file.name.toLowerCase().endsWith( '.json' ) ) {
-				alert( 'Please upload a valid JSON file.' );
+				alert( bjiAdmin.strings.fileTypeError );
 				e.preventDefault();
 				return false;
 			}

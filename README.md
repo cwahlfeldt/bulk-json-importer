@@ -250,6 +250,35 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 ```
 
+## Internationalization
+
+The plugin is fully internationalized and ready for translation.
+
+### Available Languages
+
+- **English**: Default language (built-in)
+- **Spanish (Spain)**: Complete translation included
+
+### Adding Translations
+
+To translate the plugin to your language:
+
+1. Use the template file `/languages/bulk-json-importer.pot`
+2. Create a new `.po` file for your locale (e.g., `bulk-json-importer-fr_FR.po`)
+3. Translate all strings using tools like Poedit
+4. Compile to `.mo` file using `msgfmt`
+5. Place both files in the `/languages/` directory
+
+For detailed translation instructions, see `/languages/README.md`.
+
+### Changing Language
+
+To use the plugin in Spanish or another language:
+
+1. Go to **Settings > General** in WordPress admin
+2. Change **Site Language** to your preferred language
+3. The plugin interface will automatically display in that language
+
 ## Contributing
 
 Contributions are welcome! Please:
@@ -259,6 +288,13 @@ Contributions are welcome! Please:
 3. Make your changes
 4. Add tests if applicable
 5. Submit a pull request
+
+### Translation Contributions
+
+We especially welcome translation contributions:
+- Complete translations to new languages
+- Improvements to existing translations
+- Cultural adaptations and localizations
 
 ## Credits
 

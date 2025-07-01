@@ -1,0 +1,330 @@
+# Copyright (C) 2025 Chris Wahlfeldt
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Bulk JSON Importer 0.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bulk-json-importer\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-07-01 00:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WordPress\n"
+"X-Domain: bulk-json-importer\n"
+
+#: includes/class-bji-admin.php:46
+msgid "Bulk JSON Importer"
+msgstr ""
+
+#: includes/class-bji-admin.php:59
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: includes/class-bji-admin.php:98
+msgid "Security check failed. Please try again."
+msgstr ""
+
+#: includes/class-bji-admin.php:157
+msgid "Security check failed. Please start over."
+msgstr ""
+
+#: includes/class-bji-admin.php:164
+msgid "Missing required data (transient key, post type, or mapping info). Please start over."
+msgstr ""
+
+#: includes/class-bji-utils.php:72
+msgid "Title"
+msgstr ""
+
+#: includes/class-bji-utils.php:72
+msgid "Required"
+msgstr ""
+
+#: includes/class-bji-utils.php:73
+msgid "Content"
+msgstr ""
+
+#: includes/class-bji-utils.php:73
+msgid "Converted to Paragraph Blocks"
+msgstr ""
+
+#: includes/class-bji-utils.php:74
+msgid "Excerpt"
+msgstr ""
+
+#: includes/class-bji-utils.php:75
+msgid "Status (e.g., publish, draft)"
+msgstr ""
+
+#: includes/class-bji-utils.php:76
+msgid "Date (YYYY-MM-DD HH:MM:SS)"
+msgstr ""
+
+#: includes/class-bji-utils.php:141
+msgid "No error, file uploaded successfully."
+msgstr ""
+
+#: includes/class-bji-utils.php:142
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr ""
+
+#: includes/class-bji-utils.php:143
+msgid "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form."
+msgstr ""
+
+#: includes/class-bji-utils.php:144
+msgid "The uploaded file was only partially uploaded."
+msgstr ""
+
+#: includes/class-bji-utils.php:145
+msgid "No file was uploaded."
+msgstr ""
+
+#: includes/class-bji-utils.php:146
+msgid "Missing a temporary folder on the server."
+msgstr ""
+
+#: includes/class-bji-utils.php:147
+msgid "Failed to write file to disk on the server."
+msgstr ""
+
+#: includes/class-bji-utils.php:148
+msgid "A PHP extension stopped the file upload."
+msgstr ""
+
+#: includes/class-bji-utils.php:153
+msgid "Unknown upload error occurred."
+msgstr ""
+
+#: includes/class-bji-file-handler.php:56
+msgid "Invalid post type selected."
+msgstr ""
+
+#: includes/class-bji-file-handler.php:86
+msgid "File upload error: %s"
+msgstr ""
+
+#: includes/class-bji-file-handler.php:96
+msgid "Invalid file type. Please upload a .json file (detected type: %s)."
+msgstr ""
+
+#: includes/class-bji-file-handler.php:109
+msgid "Could not read the uploaded file."
+msgstr ""
+
+#: includes/class-bji-file-handler.php:122
+msgid "JSON Decode Error: %s. Please ensure the file is valid UTF-8 encoded JSON."
+msgstr ""
+
+#: includes/class-bji-file-handler.php:131
+msgid "JSON file structure error: Root element must be an array [...]."
+msgstr ""
+
+#: includes/class-bji-file-handler.php:135
+msgid "The JSON file appears to contain an empty array."
+msgstr ""
+
+#: includes/class-bji-file-handler.php:139
+msgid "JSON file structure error: The array should contain objects {...}."
+msgstr ""
+
+#: includes/class-bji-import-processor.php:55
+msgid "Import data expired or was invalid. Please start over."
+msgstr ""
+
+#: includes/class-bji-import-processor.php:62
+msgid "Post type mismatch between steps. Please start over."
+msgstr ""
+
+#: includes/class-bji-import-processor.php:123
+msgid "Item #%d: Skipped - Invalid data format (expected object/array)."
+msgstr ""
+
+#: includes/class-bji-import-processor.php:139
+msgid "Item #%d: Skipped - Missing required field mapping or value for: Title (post_title)."
+msgstr ""
+
+#: includes/class-bji-import-processor.php:159
+msgid "Item #%d: Failed to create post - %s"
+msgstr ""
+
+#: includes/class-bji-import-processor.php:203
+msgid "Item #%d: Notice - Invalid status \"%s\" provided for post_status, using default \"publish\"."
+msgstr ""
+
+#: includes/class-bji-import-processor.php:218
+msgid "Item #%d: Notice - Could not parse date \"%s\" for post_date, using current time."
+msgstr ""
+
+#: includes/class-bji-import-processor.php:278
+msgid "Item #%d (Post ID %d): Notice - ACF update potentially failed for field \"%s\". Check data format in JSON."
+msgstr ""
+
+#: includes/admin/upload-form.php:15
+msgid "Bulk Post Importer from JSON - Step 1: Upload"
+msgstr ""
+
+#: includes/admin/upload-form.php:16
+msgid "Upload a JSON file containing an array of objects. Each object will represent a post."
+msgstr ""
+
+#: includes/admin/upload-form.php:25
+msgid "JSON File"
+msgstr ""
+
+#: includes/admin/upload-form.php:29
+msgid "Must be a valid JSON file containing an array of objects."
+msgstr ""
+
+#: includes/admin/upload-form.php:34
+msgid "Target Post Type"
+msgstr ""
+
+#: includes/admin/upload-form.php:44
+msgid "Select the post type you want to create."
+msgstr ""
+
+#: includes/admin/upload-form.php:49
+msgid "Upload and Proceed to Mapping"
+msgstr ""
+
+#: includes/admin/mapping-form.php:27
+msgid "Bulk Post Importer - Step 2: Field Mapping"
+msgstr ""
+
+#: includes/admin/mapping-form.php:28
+msgid "File: %s"
+msgstr ""
+
+#: includes/admin/mapping-form.php:32
+msgid "Found %1$d items to import as \"%2$s\" posts. Please map the JSON keys (left) to the corresponding WordPress fields (right)."
+msgstr ""
+
+#: includes/admin/mapping-form.php:39
+msgid "Unmapped fields will be ignored or set to default values (e.g., status defaults to \"publish\", date to current time)."
+msgstr ""
+
+#: includes/admin/mapping-form.php:48
+msgid "Standard Fields"
+msgstr ""
+
+#: includes/admin/mapping-form.php:52
+msgid "JSON Key"
+msgstr ""
+
+#: includes/admin/mapping-form.php:53
+msgid "WordPress Field"
+msgstr ""
+
+#: includes/admin/mapping-form.php:11
+msgid "-- Do Not Map --"
+msgstr ""
+
+#: includes/admin/mapping-form.php:72
+msgid "Mapping a title is highly recommended."
+msgstr ""
+
+#: includes/admin/mapping-form.php:75
+msgid "Newline characters in source will create separate Paragraph blocks."
+msgstr ""
+
+#: includes/admin/mapping-form.php:84
+msgid "Advanced Custom Fields (ACF)"
+msgstr ""
+
+#: includes/admin/mapping-form.php:86
+msgid "Map JSON keys to available ACF fields for this post type."
+msgstr ""
+
+#: includes/admin/mapping-form.php:87
+msgid "Note: Complex fields like Repeaters, Galleries, Relationships, Files, or Images require the JSON data to be in the specific format ACF expects (e.g., Attachment IDs for images/files, Post IDs for relationships, structured arrays for repeaters). Basic text/number/choice fields are handled directly."
+msgstr ""
+
+#: includes/admin/mapping-form.php:91
+msgid "ACF Field"
+msgstr ""
+
+#: includes/admin/mapping-form.php:110
+msgid "No ACF field groups were found assigned to this post type."
+msgstr ""
+
+#: includes/admin/mapping-form.php:115
+msgid "Other Custom Fields (Non-ACF Post Meta)"
+msgstr ""
+
+#: includes/admin/mapping-form.php:116
+msgid "Map JSON keys to standard WordPress custom field names (meta keys). Use this for meta fields NOT managed by ACF."
+msgstr ""
+
+#: includes/admin/mapping-form.php:120
+msgid "Custom Field Name (Meta Key)"
+msgstr ""
+
+#: includes/admin/mapping-form.php:121
+msgid "Action"
+msgstr ""
+
+#: includes/admin/mapping-form.php:129
+msgid "Enter meta key"
+msgstr ""
+
+#: includes/admin/mapping-form.php:132
+msgid "Remove"
+msgstr ""
+
+#: includes/admin/mapping-form.php:139
+msgid "Add Another Custom Field Mapping"
+msgstr ""
+
+#: includes/admin/mapping-form.php:142
+msgid "Process Import"
+msgstr ""
+
+#: includes/admin/results-page.php:17
+msgid "Bulk Post Importer - Import Results"
+msgstr ""
+
+#: includes/admin/results-page.php:22
+msgid "Import process completed for file %1$s in %2$s seconds. %3$d posts imported successfully."
+msgstr ""
+
+#: includes/admin/results-page.php:33
+#, php-format
+msgid "%d item was skipped."
+msgid_plural "%d items were skipped."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/admin/results-page.php:38
+msgid "See details below."
+msgstr ""
+
+#: includes/admin/results-page.php:44
+msgid "Import Log (Errors & Notices)"
+msgstr ""
+
+#: includes/admin/results-page.php:54
+msgid "Import Another File"
+msgstr ""
+
+#: assets/js/admin.js:59
+msgid "Remove"
+msgstr ""
+
+#: assets/js/admin.js:60
+msgid "Enter meta key"
+msgstr ""
+
+#: assets/js/admin.js:61
+msgid "-- Do Not Map --"
+msgstr ""
+
+#: includes/class-bji-plugin.php:133
+msgid "File size is too large. Please upload a file smaller than 10MB."
+msgstr ""
+
+#: includes/class-bji-plugin.php:134
+msgid "Please upload a valid JSON file."
+msgstr ""

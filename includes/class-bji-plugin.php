@@ -127,9 +127,11 @@ class BJI_Plugin {
 				'nonce'       => wp_create_nonce( 'bji_admin_nonce' ),
 				'ajaxUrl'     => admin_url( 'admin-ajax.php' ),
 				'strings'     => array(
-					'removeRow'      => __( 'Remove', 'bulk-json-importer' ),
-					'enterMetaKey'   => __( 'Enter meta key', 'bulk-json-importer' ),
-					'doNotMap'       => __( '-- Do Not Map --', 'bulk-json-importer' ),
+					'removeRow'           => __( 'Remove', 'bulk-json-importer' ),
+					'enterMetaKey'        => __( 'Enter meta key', 'bulk-json-importer' ),
+					'doNotMap'            => __( '-- Do Not Map --', 'bulk-json-importer' ),
+					'fileSizeError'       => __( 'File size is too large. Please upload a file smaller than 10MB.', 'bulk-json-importer' ),
+					'fileTypeError'       => __( 'Please upload a valid JSON file.', 'bulk-json-importer' ),
 				),
 			)
 		);

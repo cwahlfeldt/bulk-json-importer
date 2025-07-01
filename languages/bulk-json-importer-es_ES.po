@@ -1,0 +1,321 @@
+# Spanish (Spain) language file for Bulk JSON Importer
+# Copyright (C) 2025 Chris Wahlfeldt
+# This file is distributed under the GPL v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Bulk JSON Importer 0.1.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/bulk-json-importer\n"
+"Last-Translator: Chris Wahlfeldt <email@example.com>\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-07-01 00:00+0000\n"
+"PO-Revision-Date: 2025-07-01 00:00+0000\n"
+"X-Generator: WordPress\n"
+"X-Domain: bulk-json-importer\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: includes/class-bji-admin.php:46
+msgid "Bulk JSON Importer"
+msgstr "Importador JSON Masivo"
+
+#: includes/class-bji-admin.php:59
+msgid "You do not have sufficient permissions to access this page."
+msgstr "No tienes permisos suficientes para acceder a esta página."
+
+#: includes/class-bji-admin.php:98
+msgid "Security check failed. Please try again."
+msgstr "Falló la verificación de seguridad. Por favor, inténtalo de nuevo."
+
+#: includes/class-bji-admin.php:157
+msgid "Security check failed. Please start over."
+msgstr "Falló la verificación de seguridad. Por favor, comienza de nuevo."
+
+#: includes/class-bji-admin.php:164
+msgid "Missing required data (transient key, post type, or mapping info). Please start over."
+msgstr "Faltan datos requeridos (clave transitoria, tipo de entrada o información de mapeo). Por favor, comienza de nuevo."
+
+#: includes/class-bji-utils.php:72
+msgid "Title"
+msgstr "Título"
+
+#: includes/class-bji-utils.php:72
+msgid "Required"
+msgstr "Requerido"
+
+#: includes/class-bji-utils.php:73
+msgid "Content"
+msgstr "Contenido"
+
+#: includes/class-bji-utils.php:73
+msgid "Converted to Paragraph Blocks"
+msgstr "Convertido a Bloques de Párrafo"
+
+#: includes/class-bji-utils.php:74
+msgid "Excerpt"
+msgstr "Extracto"
+
+#: includes/class-bji-utils.php:75
+msgid "Status (e.g., publish, draft)"
+msgstr "Estado (ej. publicado, borrador)"
+
+#: includes/class-bji-utils.php:76
+msgid "Date (YYYY-MM-DD HH:MM:SS)"
+msgstr "Fecha (AAAA-MM-DD HH:MM:SS)"
+
+#: includes/class-bji-utils.php:141
+msgid "No error, file uploaded successfully."
+msgstr "Sin errores, archivo subido exitosamente."
+
+#: includes/class-bji-utils.php:142
+msgid "The uploaded file exceeds the upload_max_filesize directive in php.ini."
+msgstr "El archivo subido excede la directiva upload_max_filesize en php.ini."
+
+#: includes/class-bji-utils.php:143
+msgid "The uploaded file exceeds the MAX_FILE_SIZE directive that was specified in the HTML form."
+msgstr "El archivo subido excede la directiva MAX_FILE_SIZE especificada en el formulario HTML."
+
+#: includes/class-bji-utils.php:144
+msgid "The uploaded file was only partially uploaded."
+msgstr "El archivo solo se subió parcialmente."
+
+#: includes/class-bji-utils.php:145
+msgid "No file was uploaded."
+msgstr "No se subió ningún archivo."
+
+#: includes/class-bji-utils.php:146
+msgid "Missing a temporary folder on the server."
+msgstr "Falta una carpeta temporal en el servidor."
+
+#: includes/class-bji-utils.php:147
+msgid "Failed to write file to disk on the server."
+msgstr "Falló la escritura del archivo al disco en el servidor."
+
+#: includes/class-bji-utils.php:148
+msgid "A PHP extension stopped the file upload."
+msgstr "Una extensión PHP detuvo la subida del archivo."
+
+#: includes/class-bji-utils.php:153
+msgid "Unknown upload error occurred."
+msgstr "Ocurrió un error de subida desconocido."
+
+#: includes/class-bji-file-handler.php:56
+msgid "Invalid post type selected."
+msgstr "Tipo de entrada seleccionado inválido."
+
+#: includes/class-bji-file-handler.php:86
+msgid "File upload error: %s"
+msgstr "Error de subida de archivo: %s"
+
+#: includes/class-bji-file-handler.php:96
+msgid "Invalid file type. Please upload a .json file (detected type: %s)."
+msgstr "Tipo de archivo inválido. Por favor, sube un archivo .json (tipo detectado: %s)."
+
+#: includes/class-bji-file-handler.php:109
+msgid "Could not read the uploaded file."
+msgstr "No se pudo leer el archivo subido."
+
+#: includes/class-bji-file-handler.php:122
+msgid "JSON Decode Error: %s. Please ensure the file is valid UTF-8 encoded JSON."
+msgstr "Error de decodificación JSON: %s. Por favor, asegúrate de que el archivo sea JSON válido codificado en UTF-8."
+
+#: includes/class-bji-file-handler.php:131
+msgid "JSON file structure error: Root element must be an array [...]."
+msgstr "Error de estructura del archivo JSON: El elemento raíz debe ser un array [...]."
+
+#: includes/class-bji-file-handler.php:135
+msgid "The JSON file appears to contain an empty array."
+msgstr "El archivo JSON parece contener un array vacío."
+
+#: includes/class-bji-file-handler.php:139
+msgid "JSON file structure error: The array should contain objects {...}."
+msgstr "Error de estructura del archivo JSON: El array debe contener objetos {...}."
+
+#: includes/class-bji-import-processor.php:55
+msgid "Import data expired or was invalid. Please start over."
+msgstr "Los datos de importación expiraron o fueron inválidos. Por favor, comienza de nuevo."
+
+#: includes/class-bji-import-processor.php:62
+msgid "Post type mismatch between steps. Please start over."
+msgstr "Discrepancia en el tipo de entrada entre pasos. Por favor, comienza de nuevo."
+
+#: includes/class-bji-import-processor.php:123
+msgid "Item #%d: Skipped - Invalid data format (expected object/array)."
+msgstr "Elemento #%d: Omitido - Formato de datos inválido (se esperaba objeto/array)."
+
+#: includes/class-bji-import-processor.php:139
+msgid "Item #%d: Skipped - Missing required field mapping or value for: Title (post_title)."
+msgstr "Elemento #%d: Omitido - Falta mapeo de campo requerido o valor para: Título (post_title)."
+
+#: includes/class-bji-import-processor.php:159
+msgid "Item #%d: Failed to create post - %s"
+msgstr "Elemento #%d: Falló al crear entrada - %s"
+
+#: includes/class-bji-import-processor.php:203
+msgid "Item #%d: Notice - Invalid status \"%s\" provided for post_status, using default \"publish\"."
+msgstr "Elemento #%d: Aviso - Estado inválido \"%s\" proporcionado para post_status, usando por defecto \"publish\"."
+
+#: includes/class-bji-import-processor.php:218
+msgid "Item #%d: Notice - Could not parse date \"%s\" for post_date, using current time."
+msgstr "Elemento #%d: Aviso - No se pudo analizar la fecha \"%s\" para post_date, usando la hora actual."
+
+#: includes/class-bji-import-processor.php:278
+msgid "Item #%d (Post ID %d): Notice - ACF update potentially failed for field \"%s\". Check data format in JSON."
+msgstr "Elemento #%d (ID de Entrada %d): Aviso - La actualización ACF posiblemente falló para el campo \"%s\". Revisa el formato de datos en JSON."
+
+#: includes/admin/upload-form.php:15
+msgid "Bulk Post Importer from JSON - Step 1: Upload"
+msgstr "Importador Masivo de Entradas desde JSON - Paso 1: Subir"
+
+#: includes/admin/upload-form.php:16
+msgid "Upload a JSON file containing an array of objects. Each object will represent a post."
+msgstr "Sube un archivo JSON que contenga un array de objetos. Cada objeto representará una entrada."
+
+#: includes/admin/upload-form.php:25
+msgid "JSON File"
+msgstr "Archivo JSON"
+
+#: includes/admin/upload-form.php:29
+msgid "Must be a valid JSON file containing an array of objects."
+msgstr "Debe ser un archivo JSON válido que contenga un array de objetos."
+
+#: includes/admin/upload-form.php:34
+msgid "Target Post Type"
+msgstr "Tipo de Entrada Objetivo"
+
+#: includes/admin/upload-form.php:44
+msgid "Select the post type you want to create."
+msgstr "Selecciona el tipo de entrada que quieres crear."
+
+#: includes/admin/upload-form.php:49
+msgid "Upload and Proceed to Mapping"
+msgstr "Subir y Proceder al Mapeo"
+
+#: includes/admin/mapping-form.php:27
+msgid "Bulk Post Importer - Step 2: Field Mapping"
+msgstr "Importador Masivo de Entradas - Paso 2: Mapeo de Campos"
+
+#: includes/admin/mapping-form.php:28
+msgid "File: %s"
+msgstr "Archivo: %s"
+
+#: includes/admin/mapping-form.php:32
+msgid "Found %1$d items to import as \"%2$s\" posts. Please map the JSON keys (left) to the corresponding WordPress fields (right)."
+msgstr "Se encontraron %1$d elementos para importar como entradas \"%2$s\". Por favor, mapea las claves JSON (izquierda) a los campos correspondientes de WordPress (derecha)."
+
+#: includes/admin/mapping-form.php:39
+msgid "Unmapped fields will be ignored or set to default values (e.g., status defaults to \"publish\", date to current time)."
+msgstr "Los campos no mapeados serán ignorados o establecidos a valores por defecto (ej. el estado por defecto es \"publish\", la fecha a la hora actual)."
+
+#: includes/admin/mapping-form.php:48
+msgid "Standard Fields"
+msgstr "Campos Estándar"
+
+#: includes/admin/mapping-form.php:52
+msgid "JSON Key"
+msgstr "Clave JSON"
+
+#: includes/admin/mapping-form.php:53
+msgid "WordPress Field"
+msgstr "Campo de WordPress"
+
+#: includes/admin/mapping-form.php:11
+msgid "-- Do Not Map --"
+msgstr "-- No Mapear --"
+
+#: includes/admin/mapping-form.php:72
+msgid "Mapping a title is highly recommended."
+msgstr "Se recomienda encarecidamente mapear un título."
+
+#: includes/admin/mapping-form.php:75
+msgid "Newline characters in source will create separate Paragraph blocks."
+msgstr "Los caracteres de nueva línea en el origen crearán bloques de Párrafo separados."
+
+#: includes/admin/mapping-form.php:84
+msgid "Advanced Custom Fields (ACF)"
+msgstr "Campos Personalizados Avanzados (ACF)"
+
+#: includes/admin/mapping-form.php:86
+msgid "Map JSON keys to available ACF fields for this post type."
+msgstr "Mapea las claves JSON a los campos ACF disponibles para este tipo de entrada."
+
+#: includes/admin/mapping-form.php:87
+msgid "Note: Complex fields like Repeaters, Galleries, Relationships, Files, or Images require the JSON data to be in the specific format ACF expects (e.g., Attachment IDs for images/files, Post IDs for relationships, structured arrays for repeaters). Basic text/number/choice fields are handled directly."
+msgstr "Nota: Los campos complejos como Repetidores, Galerías, Relaciones, Archivos o Imágenes requieren que los datos JSON estén en el formato específico que ACF espera (ej. IDs de Adjuntos para imágenes/archivos, IDs de Entradas para relaciones, arrays estructurados para repetidores). Los campos básicos de texto/número/selección se manejan directamente."
+
+#: includes/admin/mapping-form.php:91
+msgid "ACF Field"
+msgstr "Campo ACF"
+
+#: includes/admin/mapping-form.php:110
+msgid "No ACF field groups were found assigned to this post type."
+msgstr "No se encontraron grupos de campos ACF asignados a este tipo de entrada."
+
+#: includes/admin/mapping-form.php:115
+msgid "Other Custom Fields (Non-ACF Post Meta)"
+msgstr "Otros Campos Personalizados (Meta de Entrada No-ACF)"
+
+#: includes/admin/mapping-form.php:116
+msgid "Map JSON keys to standard WordPress custom field names (meta keys). Use this for meta fields NOT managed by ACF."
+msgstr "Mapea las claves JSON a nombres de campos personalizados estándar de WordPress (claves meta). Usa esto para campos meta NO gestionados por ACF."
+
+#: includes/admin/mapping-form.php:120
+msgid "Custom Field Name (Meta Key)"
+msgstr "Nombre del Campo Personalizado (Clave Meta)"
+
+#: includes/admin/mapping-form.php:121
+msgid "Action"
+msgstr "Acción"
+
+#: includes/admin/mapping-form.php:129
+msgid "Enter meta key"
+msgstr "Introduce clave meta"
+
+#: includes/admin/mapping-form.php:132
+msgid "Remove"
+msgstr "Eliminar"
+
+#: includes/admin/mapping-form.php:139
+msgid "Add Another Custom Field Mapping"
+msgstr "Añadir Otro Mapeo de Campo Personalizado"
+
+#: includes/admin/mapping-form.php:142
+msgid "Process Import"
+msgstr "Procesar Importación"
+
+#: includes/admin/results-page.php:17
+msgid "Bulk Post Importer - Import Results"
+msgstr "Importador Masivo de Entradas - Resultados de Importación"
+
+#: includes/admin/results-page.php:22
+msgid "Import process completed for file %1$s in %2$s seconds. %3$d posts imported successfully."
+msgstr "Proceso de importación completado para el archivo %1$s en %2$s segundos. %3$d entradas importadas exitosamente."
+
+#: includes/admin/results-page.php:33
+#, php-format
+msgid "%d item was skipped."
+msgid_plural "%d items were skipped."
+msgstr[0] "%d elemento fue omitido."
+msgstr[1] "%d elementos fueron omitidos."
+
+#: includes/admin/results-page.php:38
+msgid "See details below."
+msgstr "Ver detalles abajo."
+
+#: includes/admin/results-page.php:44
+msgid "Import Log (Errors & Notices)"
+msgstr "Registro de Importación (Errores y Avisos)"
+
+#: includes/admin/results-page.php:54
+msgid "Import Another File"
+msgstr "Importar Otro Archivo"
+
+#: includes/class-bji-plugin.php:133
+msgid "File size is too large. Please upload a file smaller than 10MB."
+msgstr "El archivo es demasiado grande. Por favor, sube un archivo menor a 10MB."
+
+#: includes/class-bji-plugin.php:134
+msgid "Please upload a valid JSON file."
+msgstr "Por favor, sube un archivo JSON válido."

@@ -57,16 +57,24 @@ add_action('plugins_loaded', 'bji_init');
  */
 function bji_init()
 {
-	// Load text domain for translations.
+	// Initialize main plugin class.
+	BJI_Plugin::get_instance();
+}
+
+/**
+ * Load plugin text domain for translations.
+ */
+function bji_load_textdomain()
+{
 	load_plugin_textdomain(
 		'bulk-json-importer',
 		false,
 		dirname(plugin_basename(__FILE__)) . '/languages'
 	);
-
-	// Initialize main plugin class.
-	BJI_Plugin::get_instance();
 }
+
+// Load text domain early.
+add_action('init', 'bji_load_textdomain');
 
 // Activation and deactivation hooks.
 register_activation_hook(__FILE__, array('BJI_Plugin', 'activate'));
