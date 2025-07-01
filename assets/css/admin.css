@@ -1,0 +1,229 @@
+/**
+ * Admin CSS for Bulk JSON Importer
+ *
+ * @package Bulk_JSON_Importer
+ */
+
+/* Mapping table styles */
+.bji-mapping-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+}
+
+.bji-mapping-table th,
+.bji-mapping-table td {
+	padding: 12px 8px;
+	vertical-align: top;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.bji-mapping-table thead th {
+	background: #f9f9f9;
+	font-weight: 600;
+	border-bottom: 2px solid #c3c4c7;
+}
+
+.bji-mapping-table tbody tr:hover {
+	background: #f6f7f7;
+}
+
+.bji-mapping-table select,
+.bji-mapping-table input[type="text"] {
+	min-width: 200px;
+	width: 95%;
+	max-width: 400px;
+	padding: 6px 8px;
+	border: 1px solid #8c8f94;
+	border-radius: 3px;
+	background: #fff;
+}
+
+.bji-mapping-table select:focus,
+.bji-mapping-table input[type="text"]:focus {
+	border-color: #2271b1;
+	box-shadow: 0 0 0 1px #2271b1;
+	outline: 2px solid transparent;
+}
+
+.bji-mapping-table label {
+	display: block;
+	font-weight: 600;
+	margin-bottom: 4px;
+}
+
+.bji-mapping-table label code,
+.bji-mapping-table label i {
+	font-size: 0.9em;
+	color: #646970;
+	font-weight: normal;
+}
+
+.bji-mapping-table .bji-remove-row {
+	margin-left: 5px;
+	vertical-align: middle;
+	color: #d63638;
+	border-color: #d63638;
+}
+
+.bji-mapping-table .bji-remove-row:hover {
+	background: #d63638;
+	color: #fff;
+}
+
+.bji-mapping-table p.description {
+	font-size: 0.85em;
+	font-style: italic;
+	margin: 4px 0 0 0;
+	color: #646970;
+}
+
+/* Section dividers */
+hr {
+	border: 0;
+	border-top: 1px solid #c3c4c7;
+	margin: 30px 0;
+}
+
+/* Custom field table specific styles */
+#bji-custom-fields-table tbody tr:first-child .bji-remove-row {
+	opacity: 0.5;
+}
+
+#bji-add-custom-field {
+	margin-top: 10px;
+}
+
+/* Notice improvements */
+.notice.is-dismissible {
+	position: relative;
+	padding-right: 38px;
+}
+
+.notice p {
+	margin: 0.5em 0;
+	padding: 2px;
+}
+
+/* Form improvements */
+.form-table th {
+	width: 200px;
+	padding: 20px 10px 20px 0;
+	vertical-align: top;
+}
+
+.form-table td {
+	padding: 15px 10px;
+	vertical-align: top;
+}
+
+/* Progress indication */
+.submit input[type="submit"]:disabled {
+	opacity: 0.6;
+	cursor: wait;
+}
+
+/* Results page styles */
+.bji-results-summary {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 3px;
+	padding: 15px;
+	margin: 20px 0;
+}
+
+.bji-results-summary h3 {
+	margin-top: 0;
+	color: #1d2327;
+}
+
+.bji-error-log {
+	border: 1px solid #c3c4c7;
+	background: #fff;
+	padding: 15px;
+	max-height: 400px;
+	overflow-y: auto;
+	border-radius: 3px;
+	font-family: Consolas, Monaco, monospace;
+	font-size: 13px;
+	line-height: 1.5;
+}
+
+.bji-error-log ul {
+	list-style: disc;
+	margin-left: 20px;
+	margin-bottom: 0;
+}
+
+.bji-error-log li {
+	margin-bottom: 5px;
+	padding: 2px 0;
+}
+
+/* Responsive improvements */
+@media screen and (max-width: 782px) {
+	.bji-mapping-table {
+		font-size: 14px;
+	}
+	
+	.bji-mapping-table th,
+	.bji-mapping-table td {
+		padding: 8px 4px;
+	}
+	
+	.bji-mapping-table select,
+	.bji-mapping-table input[type="text"] {
+		min-width: 150px;
+		width: 100%;
+	}
+	
+	.form-table th {
+		width: auto;
+		padding: 10px 0;
+	}
+	
+	.form-table td {
+		padding: 10px 0;
+	}
+}
+
+/* Accessibility improvements */
+.bji-mapping-table select:focus,
+.bji-mapping-table input:focus {
+	outline: 2px solid #2271b1;
+	outline-offset: -2px;
+}
+
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+/* Loading state */
+.bji-loading {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+.bji-loading::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 20px;
+	height: 20px;
+	margin: -10px 0 0 -10px;
+	border: 2px solid #c3c4c7;
+	border-top-color: #2271b1;
+	border-radius: 50%;
+	animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
