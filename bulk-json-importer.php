@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:       Bulk JSON Importer
- * Plugin URI:        https://example.com/bulk-post-importer
+ * Plugin URI:        https://github.com/cwahlfeldt/bulk-json-importer
  * Description:       Allows bulk importing of posts and custom post types from a JSON file with field mapping for standard, ACF, and custom fields. Converts text content to basic Gutenberg paragraph blocks.
  * Version:           0.1.1
  * Author:            Chris Wahlfeldt
