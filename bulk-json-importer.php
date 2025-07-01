@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Plugin Name:       Bulk Post Importer from JSON
+ * Plugin Name:       Bulk JSON Importer
  * Plugin URI:        https://example.com/bulk-post-importer
  * Description:       Allows bulk importing of posts and custom post types from a JSON file with field mapping for standard, ACF, and custom fields. Converts text content to basic Gutenberg paragraph blocks.
  * Version:           0.1.1
@@ -57,9 +57,6 @@ add_action('plugins_loaded', 'bji_init');
  */
 function bji_init()
 {
-	// Debug: Plugin initialization
-	error_log('BJI Debug - Plugin initializing...');
-
 	// Load text domain for translations.
 	load_plugin_textdomain(
 		'bulk-json-importer',
@@ -68,12 +65,7 @@ function bji_init()
 	);
 
 	// Initialize main plugin class.
-	try {
-		$plugin = BJI_Plugin::get_instance();
-		error_log('BJI Debug - Plugin instance created successfully');
-	} catch (Exception $e) {
-		error_log('BJI Debug - Error creating plugin instance: ' . $e->getMessage());
-	}
+	BJI_Plugin::get_instance();
 }
 
 // Activation and deactivation hooks.

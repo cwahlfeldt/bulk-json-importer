@@ -59,22 +59,11 @@ class BJI_Admin {
 			wp_die( __( 'You do not have sufficient permissions to access this page.', 'bulk-json-importer' ) );
 		}
 
-		// Debug: Check what's being posted
-		if ( ! empty( $_POST ) ) {
-			error_log( 'BJI Debug - POST data: ' . print_r( $_POST, true ) );
-			error_log( 'BJI Debug - FILES data: ' . print_r( $_FILES, true ) );
-		}
-
-		// Debug: Check if classes exist
-		error_log( 'BJI Debug - BJI_Plugin exists: ' . ( class_exists( 'BJI_Plugin' ) ? 'yes' : 'no' ) );
-		error_log( 'BJI Debug - BJI_Utils exists: ' . ( class_exists( 'BJI_Utils' ) ? 'yes' : 'no' ) );
-		error_log( 'BJI Debug - BJI_File_Handler exists: ' . ( class_exists( 'BJI_File_Handler' ) ? 'yes' : 'no' ) );
 
 		// Handle form submissions.
 		// Check for step 2 (process import) or presence of import button name
 		if ( ( isset( $_POST['step'] ) && $_POST['step'] === '2' ) || 
 			 isset( $_POST['bji_process_import'] ) ) {
-			error_log( 'BJI Debug - Processing import' );
 			$this->handle_process_import();
 			return;
 		}
@@ -82,12 +71,9 @@ class BJI_Admin {
 		// Check for step 1 (upload) or presence of upload button name
 		if ( ( isset( $_POST['step'] ) && $_POST['step'] === '1' ) || 
 			 ( isset( $_POST['bji_upload_json'] ) && isset( $_FILES['bji_json_file'] ) ) ) {
-			error_log( 'BJI Debug - Upload detected, processing...' );
 			$this->handle_upload_and_show_mapping();
 			return;
 		}
-
-		error_log( 'BJI Debug - Showing upload form' );
 		// Show upload form.
 		$this->render_upload_form();
 	}
@@ -106,11 +92,8 @@ class BJI_Admin {
 	 * Handle file upload and show mapping interface.
 	 */
 	private function handle_upload_and_show_mapping() {
-		error_log( 'BJI Debug - handle_upload_and_show_mapping called' );
-		
 		// Security checks.
 		if ( ! $this->verify_nonce() ) {
-			error_log( 'BJI Debug - Nonce verification failed' );
 			BJI_Plugin::get_instance()->utils->add_admin_notice(
 				__( 'Security check failed. Please try again.', 'bulk-json-importer' ),
 				'error'
@@ -119,13 +102,10 @@ class BJI_Admin {
 			return;
 		}
 
-		error_log( 'BJI Debug - Nonce verification passed' );
-
 		$file_handler = BJI_Plugin::get_instance()->file_handler;
 		$result = $file_handler->process_uploaded_file();
 
 		if ( is_wp_error( $result ) ) {
-			error_log( 'BJI Debug - File processing error: ' . $result->get_error_message() );
 			BJI_Plugin::get_instance()->utils->add_admin_notice(
 				$result->get_error_message(),
 				'error'
@@ -134,7 +114,6 @@ class BJI_Admin {
 			return;
 		}
 
-		error_log( 'BJI Debug - File processing successful, rendering mapping form' );
 		$this->render_mapping_form( $result );
 	}
 
@@ -214,14 +193,7 @@ class BJI_Admin {
 	 * @return bool
 	 */
 	private function verify_nonce() {
-		$nonce_exists = isset( $_POST[ self::NONCE_NAME ] );
-		$nonce_valid = $nonce_exists && wp_verify_nonce( sanitize_key( $_POST[ self::NONCE_NAME ] ), self::NONCE_ACTION );
-		
-		error_log( 'BJI Debug - Nonce exists: ' . ( $nonce_exists ? 'yes' : 'no' ) );
-		error_log( 'BJI Debug - Nonce valid: ' . ( $nonce_valid ? 'yes' : 'no' ) );
-		error_log( 'BJI Debug - Expected nonce name: ' . self::NONCE_NAME );
-		error_log( 'BJI Debug - Expected nonce action: ' . self::NONCE_ACTION );
-		
-		return $nonce_valid;
+		return isset( $_POST[ self::NONCE_NAME ] ) && 
+			   wp_verify_nonce( sanitize_key( $_POST[ self::NONCE_NAME ] ), self::NONCE_ACTION );
 	}
 }
